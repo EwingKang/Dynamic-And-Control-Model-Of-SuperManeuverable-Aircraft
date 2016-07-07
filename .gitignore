@@ -1,0 +1,8 @@
+# Enter file contents here
+/slprj/
+/document/
+/v0.1/
+/v0.2/
+/v0.22/
+*.mexw
+*.mexw64

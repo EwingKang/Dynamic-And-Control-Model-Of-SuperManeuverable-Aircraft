@@ -1,0 +1,86 @@
+*********************************   v0.3   *********************************
+Fix aerodynamic polynomial (as well as V0.2)
+	2.2.1a / 2.2.9a shift to zero when AOA = 0
+	2.2.8b redone the coefficient
+
+Fix aerodynamical angle calculation
+Fix attitude angle calculation in NDI
+Fix atan() with atan2(,)
+Fix optimization initial point in Maneuver Generator
+Fix rolling angle jump in Maneuver Generator
+Establish DEBUG file system with complete monitor
+Isolate Maneuver Generator as a independent block
+Clean up simulink canvas
+
+Stability:
+
+Specital Note:
+	
+Utilities:
+	X31dynamics_plot_01.m				basic dynamic info plot
+	X31dynamics_animation_04.m			improved 03large
+	X31dynamics_plot_controller_GainS_MG.m		controller info plot
+	X31dynamics_plot_controller_compare.m		compare NDI and GainS output
+------------------------------------------------------------------------------
+
+
+
+*********************************   v0.2.2   *********************************
+additional IMU sensor
+Fix thrust initial condition
+Fix AOA, SS calculation
+Fix Quaternion library Q to Eular atan / atan2 problem
+Fix aerodynamic polynomial in model and controller
+	2.2.1a / 2.2.9a shift to zero when AOA = 0
+	2.2.8b redone the coefficient
+Update to MATLAB 2014B
+
+Stability:
+	stable after X31dynamics_02_02_controller_GainS_DEBUG.slx
+	unstable for AOA cmd <= 0
+
+Specital Note:
+	Gain in h_a in longitudinal direction should be carefully handle
+
+Utilities:
+	X31dynamics_plot_01.m				basic dynamic info plot
+	X31dynamics_plot_coefficient.m			aerodynamic coefficient in CH2
+	X31dynamics_animation_03large.m			More detailed animation
+	X31dynamics_plot_controller_GainS_MG.m		controller info plot
+------------------------------------------------------------------------------
+
+
+
+*********************************   v0.2   *********************************
+update Quaternion library
+MATLAB 2013a
+
+Sstability:
+	stable for NDI
+
+Utilities:
+	X31dynamics_plot_01.m			basic dynamic info plot
+	X31dynamics_animation_03.m		better animation (M2013a)
+------------------------------------------------------------------------------
+
+
+
+*********************************   v0.1   *********************************
+complete X31 flight dynamics
+modualize initial ization file
+MATLAB 2013a
+
+Sstability:
+	stable for longitudinal AOA PD controller
+
+Utilities:
+	X31dynamics_plot_01.m		basic dynamic info plot
+	X31dynamics_print_01.m		
+	X31dynamics_animation_01.m	First animation (M2013a)
+	X31dynamics_animation_02.m
+	X31dynamics_animation_03.m	better animation (M2013a)
+------------------------------------------------------------------------------
+
+Version rules
+Same sub version shares the same initial file
+e.g. v0.2 / v0.2.1 --> X31dynamics_02_init
